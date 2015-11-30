@@ -1,8 +1,5 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
-
 require 'application/Kernel/Autoloader.php';
 
 $uri_a = explode('?', $_SERVER["REQUEST_URI"]);
