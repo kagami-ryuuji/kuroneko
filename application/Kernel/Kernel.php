@@ -23,11 +23,15 @@ class Kernel
       Route::add($route);
     }
     $route = Route::find($uri);
-    self::$arguments = $route->arguments;
-    foreach ($route->initialNodes as $init) {
-      Node\NodeMachine::run($init);
+    if ($route) {
+      self::$arguments = $route->arguments;
+      foreach ($route->initialNodes as $init) {
+        Node\NodeMachine::run($init);
+      }
+      $output = Node\NodeMachine::run($route->nodes);
+      echo $output;
+    } else {
+      echo 404;
     }
-    $output = Node\NodeMachine::run($route->nodes);
-    echo $output;
   }
 }
