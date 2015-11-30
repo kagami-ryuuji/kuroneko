@@ -1,6 +1,11 @@
 # kuroneko
 
-/application/bootstrap.php - global initialization here (init your database or session for example)
+## Installation
+Just download and put into your www directory.
+Requires mod_rewrite.
+
+### /application/bootstrap.php
+Global initialization here (init your database or session for example)
 
 ## Routing
 ### /application/routes.json
@@ -65,7 +70,3 @@ Called class method doesn't know where its result will be used. It doesn't work 
 
 ## Class loading
 All your classes should be placed in `/application` directory. Otherwise autoloader can't find them.
-
-## Installation
-Just download and put into your www directory.
-Requires mod_rewrite.
