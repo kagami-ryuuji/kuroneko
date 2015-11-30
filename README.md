@@ -51,7 +51,7 @@ Template variables can be another template node, service node, string, number, b
 Service is just class having static method. Method names always processed with `lcfirst()`
 ```json
 {
-  "@service": "Path.To.Class Method",
+  "@service": "[Path.To.Class Method]",
   "@params": [
     "param1",
     "[RouteParam]"
