@@ -7,10 +7,12 @@ use Kernel\Routing\Route;
 class Kernel
 {
   private static $arguments = array();
+  // used by node machine for get route parameters
   public static function arg($name)
   {
     return self::$arguments[$name];
   }
+  // Main function. As in C
   public static function main($uri)
   {
     if (file_exists('application/bootstrap.php')) {

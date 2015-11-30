@@ -2,6 +2,9 @@
 
 namespace Kernel\Node;
 
+/**
+ * Template node
+ */
 class Template {
   private $name = "";
   private $vars = array();
