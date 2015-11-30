@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sass --watch /var/www/html/static/sass:/var/www/html/static/css

@@ -1,0 +1,39 @@
+[
+  {
+    "when": "otaku/{name:string}",
+    "then": {
+      "init": [
+        {
+          "@service": "[Sample.Otaku Init]",
+          "@params": [
+            "[Name]"
+          ]
+        }
+      ],
+      "output": {
+        "@template": "Sample.Template.Layout",
+        "title": {
+          "@service": "[Sample.Otaku Greeting]"
+        },
+        "view": {
+          "@template": "Sample.Template.TwoColumns",
+          "sidebar": {
+            "@template": "Sample.Anime.Template.Sidebar",
+            "categories": {
+              "@service": "[Sample.Anime.Model Categories]"
+            }
+          },
+          "content": {
+            "@template": "Sample.Anime.Template.TitleList",
+            "greeting": {
+              "@service": "[Sample.Otaku Greeting]"
+            },
+            "titles": {
+              "@service": "[Sample.Anime.Model Titles]"
+            }
+          }
+        }
+      }
+    }
+  }
+]
