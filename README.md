@@ -1,4 +1,4 @@
-# kuroneko
+# kuroneko [![Build Status](https://travis-ci.org/kagami-ryuuji/kuroneko.svg)](https://travis-ci.org/kagami-ryuuji/kuroneko)
 
 ## Installation
 Just download and put into your www directory.
