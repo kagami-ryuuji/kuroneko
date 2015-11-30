@@ -61,6 +61,11 @@ Service is just class having static method. Method names always processed with `
 ```
 Class path: `/application/Path/To/Class.php`
 Parameter can be another service node, template node, string, number, boolean.
+Called class method doesn't know where its result will be used. It doesn't work with templates directly. It simplifies testing.
 
 ## Class loading
 All your classes should be placed in `/application` directory. Otherwise autoloader can't find them.
+
+## Installation
+Just download and put into your www directory.
+Requires mod_rewrite.
