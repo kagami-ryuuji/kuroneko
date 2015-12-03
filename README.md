@@ -1,4 +1,4 @@
-# kuroneko [![Build Status](https://travis-ci.org/kagami-ryuuji/tsundere.svg?branch=master)](https://travis-ci.org/kagami-ryuuji/tsundere)
+# Tsundere PHP framework [![Build Status](https://travis-ci.org/kagami-ryuuji/tsundere.svg?branch=master)](https://travis-ci.org/kagami-ryuuji/tsundere)
 
 ## Installation
 Just download and put into your www directory.
